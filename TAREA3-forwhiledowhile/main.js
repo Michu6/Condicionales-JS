@@ -78,17 +78,17 @@ function pares() {
 }
 pares();
 
-// // EJERCICIO 6
-// // h=hipotenusa, j=catopuesto, k=catadyacente
-// for(h=1;h<=500;h++) {
-// 	for(j=1;j<=500;j++) {
-// 		for(k=1;k<=500;k++) {
-// 			if(h*h===(j*j)+(k*k)) {
-// 				console.log("La hipotenusa es " + h + " el cateto opuesto es " + j + " y el cateto adyacente es " + k);
-// 			}
-// 		}
-// 	}
-// }
+// EJERCICIO 6
+// h=hipotenusa, j=catopuesto, k=catadyacente
+for(h=1;h<=500;h++) {
+	for(j=1;j<=500;j++) {
+		for(k=1;k<=500;k++) {
+			if(h*h===(j*j)+(k*k)) {
+				console.log("La hipotenusa es " + h + " el cateto opuesto es " + j + " y el cateto adyacente es " + k);
+			}
+		}
+	}
+}
 
 // EJERCICIO 7
 function btn7() {
@@ -102,3 +102,39 @@ function btn7() {
 }
 
 // EJERCICIO 8
+function btn8() {
+	var numero=1;
+	var base=Number(prompt("Ingrese tu número"));
+	var potencia=Number(prompt("¿A que número deseas elevarlo?"));
+	for(m=1;m<=potencia;m++){
+		var numero=numero*base;
+	}
+	document.write("<br>"+"La potencia de tu número es: " + numero);
+}
+
+// EJERCICIO 9
+function btn9() {
+	var suma=0;
+	var puntaje=21;
+	for(n=1;n<=40;n++){
+		nota = Number(prompt("Ingresa la nota: "));
+		suma= suma+nota;
+		if (puntaje>nota){
+			puntaje=nota;
+		}
+	}
+	var promedio=suma/40;
+	document.write("<br>" + "El promedio de las notas es: " + promedio);
+	document.write("<br>" + "La menor nota es: " + puntaje);
+}
+
+// EJERCICIO 10
+function btn10() {
+	for(o=1;o<=10;o++){
+		numero = Number(prompt("Porfavor ingresa tu número "));
+		cubo= numero*numero*numero;
+		cuarta=cubo*numero;
+		document.write("<br>" + "El cubo del número "+ numero +" es: "+ cubo);
+		document.write("<br>" + "La cuarta del número "+ numero +" es: "+ cuarta);
+	}
+}
